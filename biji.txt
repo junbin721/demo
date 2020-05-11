@@ -23,8 +23,26 @@ git log --pretty=oneline   打印一行
 git log --oneline  打印一行
 git log --graph --pretty=oneline --abbrev-commit  打印详细的带分支的信息
 git config --global alias.lg 'log --graph --pretty=oneline --abbrev-commit'    做一些全局的配置别名，可以简化git操作单词长度
-git tag -a v1.0 -m 'message说明' commitID   打标签
-啊啊啊
+git tag -a v1.0 -m 'message说明' commit_id   打标签
+git reset --hard HEAD^  （git reset --hard commit_id/v1.0/HEAD~50）
+版本回退（以当前HEAD指向的commit_id进行回退）
+git reflog   查看命令历史的每一步操作，一般用来确认回到未来的那个版本
+
+远程关联
+git remote add origin git@github.com:junbin721/demo.git      远程关联
+git remote 查看所有的远程仓库关联
+git remote -d originName  删除关联的仓库
+git push -u origin master （如果是第一次推送需要添加-u）
+
+
+配合文件：
+README.md     项目说明
+.gitignore         忽略特殊文件
+
+分支管理：
+git branch <name>  创建分支
+git checkout <name>  /  git switch <name>  切换分支
+git checkout -b <name>  /  git switch -c <name>   创建并切换到分支上
 
 
 
