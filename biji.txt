@@ -43,6 +43,8 @@ README.md     项目说明
 git branch <name>  创建分支
 git checkout <name>  /  git switch <name>  切换分支
 git checkout -b <name>  /  git switch -c <name>   创建并切换到分支上
+git merge <name>  合并分支（快进的方式进行合并）
+git merge --no-ff -m "message" <name>  不以快进的方式进行合并（在合并时会把合并分支的这一步做一次commit提交）
 
 
 
