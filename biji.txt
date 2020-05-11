@@ -17,3 +17,28 @@ git status    查看状态
 git checkout -- biji.txt    撤销工作区的修改
 git restore biji.txt  撤销工作区修改git
 git restore --staged biji.txt   撤销暂存区修改
+git log   打印全部的日志信息
+git log -1  打印最近一次提交   -2  最近两次
+git log --pretty=oneline   打印一行
+git log --oneline  打印一行
+git log --graph --pretty=oneline --abbrev-commit  打印详细的带分支的信息
+git config --global alias.lg 'log --graph --pretty=oneline --abbrev-commit'    做一些全局的配置别名，可以简化git操作单词长度
+git tag -a v1.0 -m 'message说明' commitID   打标签
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
