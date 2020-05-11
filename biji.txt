@@ -9,7 +9,9 @@
 
 提交内容到仓库
 1. git add *  	内容提交到了暂存区
+ (git rm <name> 将删除的文件提交到暂存区)
 （git add *.html git add /test/      git add biji.txt）
+ 
 2. git commit -m message   提交到仓库
   会生成commit
 配合一些指令做操作：
@@ -40,11 +42,15 @@ README.md     项目说明
 .gitignore         忽略特殊文件
 
 分支管理：
+git branch     查看分支列表
 git branch <name>  创建分支
 git checkout <name>  /  git switch <name>  切换分支
 git checkout -b <name>  /  git switch -c <name>   创建并切换到分支上
 git merge <name>  合并分支（快进的方式进行合并）
 git merge --no-ff -m "message" <name>  不以快进的方式进行合并（在合并时会把合并分支的这一步做一次commit提交）
+git branch -d <name>   删除分支
+git branch -D <name>  强制删除分支
+
 
 
 
